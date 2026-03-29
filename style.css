@@ -1,0 +1,201 @@
+body {
+    background-image: url('/assents/2background-home.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Menu fixo no topo */
+.Icones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px;
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+/* Logo fixada à esquerda */
+.logo {
+    height: 60px;
+    flex-shrink: 0;
+}
+
+/* Links alinhados à direita */
+.links {
+    display: flex;
+    gap: 25px;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Estilo dos links */
+.links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    padding: 10px;
+    transition: color 0.2s;
+    white-space: nowrap; /* impede quebra de linha */
+}
+
+.links a:hover {
+    color: #555;
+    text-decoration: underline;
+}
+
+/* ✅ Espaço para o conteúdo abaixo do menu fixo */
+.conteudo {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('/assents/1background-home.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding-top: 80px; /* espaço para o menu fixo */
+    box-sizing: border-box;
+
+    z-index: 0;
+    position: relative;
+}
+
+/* Camada escura sobre a imagem */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+/* Texto por cima da imagem */
+.hero-conteudo {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+}
+
+/* Título */
+.hero h1 {
+    font-size: clamp(2rem, 8vw, 5rem);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Texto com gradiente */
+.destaque {
+    background: linear-gradient(to right, #f97316, #facc15); /* laranja -> amarelo */
+   -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+}
+
+/* Parágrafo */
+.hero p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+/*PROGRAMADORAS*/
+.titulo-equipe {
+  font-size: clamp(2rem, 5vw, 5rem);
+  text-align: center;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+
+.equipe {
+  margin-top: 100px; 
+  padding: 150px 20px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 150px;
+  justify-items: center;
+}
+
+/* Card externo */
+.flip {
+  width: clamp(150px, 15vw, 220px);
+  aspect-ratio: 3 / 4; /* Mantém a proporção sem altura fixa */
+  height: 240px;
+  perspective: 1000px;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+}
+
+/* Container do conteúdo interno com rotação */
+.inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip:hover .inner {
+  transform: rotateY(180deg);
+}
+
+.frente, .tras {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Frente com imagem */
+.frente {
+  background-size: cover;
+  background-position: center;
+}
+
+/* Verso */
+.tras {
+  background-color: orange;
+  transform: rotateY(180deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 10px;
+}
