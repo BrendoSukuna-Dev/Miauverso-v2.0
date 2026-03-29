@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="Estilo.css">
+</head>
+<body>
+
+     <div class="icones">
+        <img src="logo.jpg" alt="logo" class="logo">
+        <nav class="links">
+            <a href="/Final_Project/home/home.html">Inicio</a>
+            <a href="/projeto-integrador-SERVICOS-USAR/projeto-integrador/servicos.html">Serviços</a>
+            <a href="/Planos/julia/planos.html">Planos</a>
+            <a href="Contato.html">Contato</a>
+        </nav>
+    </div>
+
+
+
+    <div class="container">
+        <div class="esquerda">
+            <h1>Localização</h1>
+            <p>Rua das Flores, 123 - Bairro Jardim da Penha,<br>
+            Vila Velha - ES, 29100-000.</p>
+            <h1>Siga-nos</h1>   
+            <p>
+                <a href="https://pt-br.facebook.com/"><img src="Facebook.jpeg" alt="Facebook" width="80"></a>
+                <a href="https://www.instagram.com/"><img src="Instagram.jpeg" alt="Instagram" width="80"></a>
+                <a href="https://twitter.com/"><img src="Twitter.jpeg" alt="Twitter" width="80"></a>
+                <a href="https://www.google.com/?zx=1756945495013&no_sw_cr=1"><img src="Google.jpeg" alt="Google" width="80"><a>
+            </p>
+        </div>
+        <div class="formulario-flutuante">
+            <h2 style="text-align:center;">Formulário de Contato</h2>
+            <form action="https://formsubmit.co/le.lads36@gmail.com" method="post">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/Contato.html">
+
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
