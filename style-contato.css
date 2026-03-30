@@ -1,4 +1,25 @@
 
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Helvetica Neue", sans-serif;
+  color: #333;
+  background: #f1c98c;
+  
+  
+}
+
+
+
+img { max-width: 100%; display: block; }
+
+:root{
+  --brand: #f2a20c;
+  --brand-hover: #e18f00;
+  --card-w: 340px;
+  --card-h: 520px;
+  --radius: 18px;
+  --shadow: 0 12px 30px rgba(0,0,0,.12);
+}
 
 /* ===== Topo (logo + navegação) ===== */
 .icones{
