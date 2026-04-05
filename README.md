@@ -1,4 +1,5 @@
 <h1>Miauverso v2.0</h1>
+<h2>🖥 Projeto Concluido ✅ </h2>
 
 <h2>📋 Sobre o projeto</h2>
 <p>Este projeto é de uma amiga da faculdade a IsisLelis. Ela me pediu ajuda para publicar esse projeto no github e depois publicar no vercel (como fiz com meu jogo do número secreto)
